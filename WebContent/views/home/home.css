@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+   box-sizing: border-box;
+}
+.header
+{
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: #00802b;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.local
+{
+	position: relative;
+	margin-top:17px;
+	margin-left:17px;
+}
+.local h3
+{
+	color: white;
+}
+.logo-fb
+{
+	margin-top:10px;
+	
+}
+.main-container
+{
+	position: relative;
+	top:60px;
+	left: 0px;
+	height: 1500px;
+	width: 100%;
+	background-color:  	#f1f1f1;
+	padding:16px;
+}
+.view-all
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+}
+.view-all
+{
+	color: red;
+	font-family:  Georgia, Serif;
+}
+.view-all input
+{
+	
+	font-size: 14px;
+    background-color: blue;
+    color: white;
+    padding: 8px; 
+	float: right;
+}
+.main-container .category-panel
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	float: left;
+	/*justify-content: space-around;*/
+			
+}
+.category
+{
+	
+	       min-width: 200px;
+			flex=1;
+			margin: 20px;
+			height: 200px;
+			background-color: white;
+			box-shadow: 1px 2px 1px lightgray;
+		    text-align: center;
+		    position: relative;
+		    padding-top: 30px;
+
+}
+.category a 
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: red;
+}
+.recent-more
+{
+	position: relative;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+}
+.recent-category
+{
+	width: 100%;
+	height: 270px;
+	margin-top: 20px;
+	background-color: white;
+	box-shadow: 1px 2px 1px lightgray;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.recent-image
+{
+	       min-width: 300px;
+	       width: 30%;
+			flex=1;
+			margin: 20px;
+			height: 230px;
+			background-color: #ffd6cc;
+			box-shadow: 1px 2px 1px lightgray;
+		    text-align: center;
+		    position: relative;
+		    padding-top: 30px;
+
+}
+.recent-image figure
+{
+	margin:30px;
+}
+.post 
+{
+	       bottom : 50px;
+			height: 50px;
+			width: 50px;
+			right: 50px;
+			position: fixed;
+			
+			font-size: 30px;
+			padding: 16px;
+			background-color: red;
+			color: white;
+			z-index: 10;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			border-radius: 50%;
+			box-shadow: 1px 1px 1px darkgray;
+}
+.post a
+{
+	text-decoration: none;
+			color: white;
+
+	}

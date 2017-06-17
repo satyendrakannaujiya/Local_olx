@@ -1,0 +1,56 @@
+*
+{
+	padding:0;
+	margin:0;
+}
+.main-box
+{
+	width: 50%;
+	height: 300px;
+	background-color: #f1f1f1;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+     margin-top: 30px;
+     text-align: center;
+}
+.items
+{
+   margin-top: 30px; 
+    
+}
+.items input
+{
+	width: 50%;
+	height: 40px;
+	font-size: 20px;
+}
+.footer
+{
+	display: flex;
+	flex-direction: row;
+	 margin: 0 auto;
+	 
+   justify-content: center;
+}
+.footer .signin
+{
+  background-color: blue;
+  width: 80px;
+  height: 35px;
+  margin:15px;
+  color: white;
+}
+.footer .signup
+{
+  background-color: green;
+  width: 80px;
+  height: 35px;
+  margin:5px;
+  color: white;
+}
+.footer a
+{
+  margin:10px;
+}
+

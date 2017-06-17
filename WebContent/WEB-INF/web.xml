@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Local_olx</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.satyendra.webui.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ViewItemsServlet</servlet-name>
+    <servlet-class>com.satyendra.webui.ViewItemsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewItemsServlet</servlet-name>
+    <url-pattern>/viewItems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.satyendra.webui.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>com.satyendra.logout.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>com.satyendra.webui.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/SIGNUP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>categorywise</servlet-name>
+    <servlet-class>com.satyendra.webui.ViewCategorywiseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>categorywise</servlet-name>
+    <url-pattern>/viewCategorywiseServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>postads</servlet-name>
+    <servlet-class>com.satyendra.webui.PostAdsServlet</servlet-class>
+    <multipart-config>
+      <location>/home/satyendra/workspace/Local_olx/WebContent/images</location>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>20971520</max-request-size>
+      <file-size-threshold>5242880</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>postads</servlet-name>
+    <url-pattern>/POSTADS</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+    <filter-name>RequestAuthenticationFilter</filter-name>
+    <filter-class>com.satyendra.authentication.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>RequestAuthenticationFilter</filter-name>
+    <url-pattern>/Login</url-pattern>
+  </filter-mapping>
+</web-app>
